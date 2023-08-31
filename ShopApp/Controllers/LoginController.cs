@@ -32,14 +32,7 @@ namespace ShopApp.Controllers
             }
             return _user;
 
-            /*
-    User _user = null;
-        if (user.Name == "admin" && user.Password == "123")
-        {
-            _user = new User { Name = "Raihan" };
-        }
-        return _user;
-            */
+           
         }
 
         private string GenerateToken(User user)
