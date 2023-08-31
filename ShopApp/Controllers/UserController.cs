@@ -17,36 +17,7 @@ namespace ShopApp.Controllers
             _BLL = new BLL.Services.UserService();
 
         }
-        /*
-        [HttpGet]
-        [Route("getUsers")]
-        public List<UserDTO> GetAllUsers()
-        {
-            return _BLL.GetAllUsers();
-        }
-        [HttpGet]
-        [Route("getUsersbyid")]
-        public ActionResult<UserDTO> GetUserById(int id)
-        {
-            var data =  _BLL.GetUserById(id);
-            if (data == null) 
-            { 
-                return NotFound("Invalid Id");
-            }
-            return Ok(data);
-        }
-        [Route("postUser")]
         
-        [HttpPost]
-        public void postUsers(UserDTO userDTO) 
-        {
-            _BLL.postUser(userDTO);
-        }
-        */
-        /// <summary>
-        /// //////////////////////
-        /// </summary>
-        /// <returns></returns>
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<UserDTO>>> GetUser()
