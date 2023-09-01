@@ -1,5 +1,5 @@
 # ShopApp
-This is a web App using asp.net Core
+This is a web App using asp.net Core.
 In this solution I've created some API where
 1. User can create their account,update,delete and view themselves.
 2. CRUD operation for Product List
